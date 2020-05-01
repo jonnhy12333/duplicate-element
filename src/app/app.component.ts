@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouteReuseStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'duplicate-element';
+  disableAnimations = false;
+
+  constructor(private reuseStrategy: RouteReuseStrategy) { }
+
+  isEnabled(): boolean {
+    return (this.reuseStrategy as any).enabled;
+  }
+
+  toggleEnabled(): void {
+    (this.reuseStrategy as any).enabled = !(this.reuseStrategy as any).enabled;
+  }
 }

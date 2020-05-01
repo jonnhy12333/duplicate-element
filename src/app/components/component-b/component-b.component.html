@@ -1,0 +1,7 @@
+<div>
+  <!-- NOTE: Does not use the 'expansionAnimation', everything else the same as component-a -->
+  <div class="component-b" *ngIf="show">
+    Component B
+  </div>
+  <button (click)="show = !show">Toggle</button>
+</div>

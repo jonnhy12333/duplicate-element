@@ -1,0 +1,29 @@
+a {
+  margin: 32px;
+  text-decoration: none;
+}
+
+a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.app__top {
+  margin: 32px;
+}
+
+.app__instruction {
+  color: red;
+}
+
+.app__status-enabled {
+  font-weight: bold;
+  color: blue;
+}
+
+.app__status-item {
+  span,
+  button {
+    margin: 8px;
+  }
+}
