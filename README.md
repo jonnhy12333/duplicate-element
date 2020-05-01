@@ -1,6 +1,6 @@
 # DuplicateElement
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Here is a screenshot of what can happen when Route Reuse is enabled and an animation is present on a reused route
 
 ![Screenshot](/images/screenshot.png)
 Format: ![Alt Text](url)
